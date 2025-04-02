@@ -1,0 +1,52 @@
+/* Basic Styling for Navigation */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    height: 200vh;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    transition: background 0.3s;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+.navbar.scrolled {
+    background: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+.navbar ul li {
+    margin: 0 15px;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 8px 12px;
+    transition: 0.3s;
+}
+.navbar ul li a:hover {
+    background: white;
+    color: black;
+    border-radius: 5px;
+}
+.content {
+    padding-top: 70px;
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+}
